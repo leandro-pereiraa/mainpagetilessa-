@@ -1,0 +1,55 @@
+<mvc:View 
+controllerName="openBusiness.controller.Dashboard"
+xmlns:mvc="sap.ui.core.mvc"
+xmlns="sap.m"
+xmlns:f="sap.f"
+xmlns:card="sap.f.cards"
+xmlns:l="sap.ui.layout">
+    <FlexBox
+        height="600px"
+        alignItems="Center"
+        justifyContent="Center"
+    >
+        <f:Card
+            class="sapUiMediumMargin testeClass"
+            width="300px"
+        >
+            <f:header>
+                <card:Header
+                    title="{i18n>Login}"
+                    iconSrc="sap-icon://visits"
+                />
+            </f:header>
+            <f:content>
+                <FlexBox
+                    height="120px"
+                    class="sapUiSmallMargin"
+                    justifyContent="Center"
+                >
+                    <HBox justifyContent="Center"/>
+                    <HBox
+                        renderType="Bare"
+                        justifyContent="Center"
+                    >
+                        <l:VerticalLayout>
+                            <Button
+                                        width="265px"
+                                        text="{i18n>INTERNOS}"
+                                        press="navToInternos"
+                                        type="Emphasized"
+                                        class="sapUiMediumMarginBottom"
+                                    />
+                             <Button
+                                        width="265px"
+                                        text="{i18n>EXTERNOS}"
+                                        press="navToExternos"
+                                        type="Emphasized"
+                                    />
+                           
+                        </l:VerticalLayout>
+                    </HBox>
+                </FlexBox>
+            </f:content>
+        </f:Card>
+    </FlexBox>
+</mvc:View>
